@@ -2,10 +2,91 @@
 body {
     margin: 0;
     font-size: 16px;
+
 }
 
-.container {
+.container 
+{
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+
+    padding: 0px;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
 }
+
+header h1
+{
+    text-align: left;
+}
+/*remove bullits*/
+nav ul {
+    list-style-type: none;
+  }
+
+/*allign tabs to the right*/
+header li
+{
+    padding: 5px 5px 5px 5px 5px ;
+    display: inline-block;
+    margin: 0;
+    padding-top:0em ;
+    text-align: right;
+}
+/*adjust p right of 'healthiest' img*/
+section
+{
+    position: relative;
+}
+ 
+.overview-hero-text p
+{
+    float: right;
+    position: absolute;
+    padding-left: 50px;
+    
+}
+.overview-hero-text h2
+{
+    text-align: right;
+    padding-left: 50px;
+}
+/*layout learn about columns */
+
+/*.learn-about.container.cards
+ {
+     display: grid;
+     grid-template-columns: 300px 300px 300px ;
+     grid-template-rows: max-content;
+     
+
+ }*/
+
+.cards
+ {
+     display: grid;
+     grid-template-columns: repeat(3,1fr) ;
+     grid-gap: 10px;
+   
+ }
+
+.learn-about.container.card
+ {
+    box-shadow: 2px 1px 2px 1px;
+    /*display: inline;
+    align-items: center;
+    justify-content: center;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border-style: outset;*/
+}
+    
+ 
+ .learn-about.card-body
+ {
+     padding: 0px 15px 15px;
+ }
+ 
