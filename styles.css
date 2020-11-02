@@ -11,11 +11,13 @@ body {
     max-width: 960px;
     width: 100%;
 
-    padding: 0px;
+    padding-left: 15%;
+    padding-right: 15%;
     grid-area: header;
     display: flex;
     flex-direction: row;
 }
+
 
 header h1
 {
@@ -69,10 +71,12 @@ section
      display: grid;
      grid-template-columns: repeat(3,1fr) ;
      grid-gap: 10px;
-   
+     right: 20px;
+
+     
  }
 
-.learn-about.container.card
+.card
  {
     box-shadow: 2px 1px 2px 1px;
     /*display: inline;
@@ -83,10 +87,47 @@ section
     justify-content: center;
     /*border-style: outset;*/
 }
+.card>img
+{
+    max-width: 50%;
+    height: 50%;
+}
     
  
- .learn-about.card-body
+.card-body
  {
      padding: 0px 15px 15px;
  }
- 
+
+ /*alligning covid 19  div's contents */
+
+ .cta {
+    float: right;
+    border: 1px solid transparent;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: .25rem;
+    text-align: center;
+   }
+
+   .btn {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;  
+  }
+/*supposed to reallign the article lines vertically*/
+  .stories.container
+  {
+    display: grid;
+    grid-template-rows: repeat(2,1fr) ;
+    grid-template-columns: 1;
+    grid-gap: 10px;
+  
+  }
+  /*circular pic borders*/
+  .stories.container>img
+  {
+    border-radius:50%;
+    height:30%
+  }
