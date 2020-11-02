@@ -22,7 +22,7 @@ header
 {
     font-family:family of Georgia, "Times New Roman", Times, serif;
     font-size:18px;
-    background:white;
+    background: #ffffff;;
 }
 /*fnt colours for nav links*/
 header nav a
@@ -174,4 +174,8 @@ section
       display:block;
       height: 50px;
       color: white;
+}
+footer.container
+{
+    display:flex;
 }
